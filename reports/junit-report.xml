@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+    <testsuite name="skicka-pengar;skicka-pengar-till-någon-annans-konto" tests="22" failures="1" skipped="10">
+        <properties>
+            <property name="URI" value="C:/Users/Ruben/Documents/skolan/Bank_uppgift/Bank-master/features/Skicka_pengar.feature">
+            </property>
+        </properties>
+        <testcase name="Given that I visit the bank site" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="3.469133023">
+        </testcase>
+        <testcase name="And I press on login" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="0.04260742">
+        </testcase>
+        <testcase name="When I enter my information" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="0.07960609">
+        </testcase>
+        <testcase name="Given Press the login button" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="0.035335289">
+        </testcase>
+        <testcase name="Then I should log into my account" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="0.000084847">
+        </testcase>
+        <testcase name="Given that I press Överföringar andra konton" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="0.081884193">
+        </testcase>
+        <testcase name="And that I chose Annat konto" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="0.037636129">
+        </testcase>
+        <testcase name="And that I enter account number" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="0.044711949">
+        </testcase>
+        <testcase name="And that I enter amount of money that are less than my max transfer amount" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="0.031138431">
+        </testcase>
+        <testcase name="And that I enter Test as a message" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="0.032998679">
+        </testcase>
+        <testcase name="And I press Utför" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="0.032308538">
+        </testcase>
+        <testcase name="And I accept the pop-up" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="0.002477743">
+            <failure message="NoSuchAlertError: no such alert">NoSuchAlertError: no such alert
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.17134 x86_64)
+    at Object.checkLegacyResponse (C:\Users\Ruben\Documents\skolan\Bank_uppgift\Bank-master\node_modules\selenium-cucumber-js\node_modules\selenium-webdriver\lib\error.js:529:15)
+    at parseHttpResponse (C:\Users\Ruben\Documents\skolan\Bank_uppgift\Bank-master\node_modules\selenium-cucumber-js\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at doSend.then.response (C:\Users\Ruben\Documents\skolan\Bank_uppgift\Bank-master\node_modules\selenium-cucumber-js\node_modules\selenium-webdriver\lib\http.js:441:30)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+From: Task: WebDriver.switchTo().alert()
+    at thenableWebDriverProxy.schedule (C:\Users\Ruben\Documents\skolan\Bank_uppgift\Bank-master\node_modules\selenium-cucumber-js\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
+    at TargetLocator.alert (C:\Users\Ruben\Documents\skolan\Bank_uppgift\Bank-master\node_modules\selenium-cucumber-js\node_modules\selenium-webdriver\lib\webdriver.js:1867:29)
+    at createWorld.&lt;anonymous&gt; (C:\Users\Ruben\Documents\skolan\Bank_uppgift\Bank-master\step-definitions\Skicka_pengar.js:50:33)
+    at process._tickCallback (internal/process/next_tick.js:61:11)</failure>
+        </testcase>
+        <testcase name="Then the money should be sent" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="Given that I press Start" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="Then I should be able to see my transaktion" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="Given that I press Logga ut" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="And that I press Logga in" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="When I enter the recipents information" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="Given Press the login button" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="Then I should log into the recipents account" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="Given that I press the Start button" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="Then I should be able to see the recipents transaktion" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto">
+            <skipped message="">
+            </skipped>
+        </testcase>
+    </testsuite>
+</testsuites>
