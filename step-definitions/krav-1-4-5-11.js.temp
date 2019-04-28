@@ -1,0 +1,43 @@
+let {$, sleep} = require('./funcs');
+
+module.exports = function(){
+
+  this.Given(/^that I visit the bank site$/, async function () {
+    await helpers.loadPage('http' + '://localhost:3000');
+  });
+
+  this.Given(/^I press on login and enter my login information$/, async function () {
+    await driver.findElement(By.css("button[type='button']")).click();
+    await sleep(2000);
+    await driver.findElement(By.css("input[type='text']")).sendKeys("Anna");
+    await driver.findElement(By.css("input[type='password']")).sendKeys("ANNA123");
+    await driver.findElement(By.css("button[type='submit']")).click(); 
+  });
+
+  this.Then(/^I should be able to see my five last transactions$/, async function () {
+    await driver.findElements(By.xpath("/html/body/main/div/article/section[1]"));
+    await driver.findElements(By.xpath("/html/body/main/div/article/section[1]/table/tbody/tr[1]/th[1]"));
+    await driver.findElements(By.xpath("/html/body/main/div/article/section[1]/table/tbody/tr[2]/th[1]"));
+    await driver.findElements(By.xpath("/html/body/main/div/article/section[1]/table/tbody/tr[3]/th[1]"));
+    await driver.findElements(By.xpath("/html/body/main/div/article/section[1]/table/tbody/tr[4]/th[1]"));
+    await driver.findElements(By.xpath("/html/body/main/div/article/section[1]/table/tbody/tr[5]/th[1]"));
+    });
+
+    this.Then(/^my different accounts with their respective balance$/, async function () {
+    await driver.findElements(By.xpath("/html/body/main/div/article/section[2]/table"));
+    await driver.findElements(By.xpath("/html/body/main/div/article/section[2]/table/tbody/tr[1]/th"));
+    await driver.findElements(By.xpath("/html/body/main/div/article/section[2]/table/tbody/tr[2]/th"));
+    await driver.findElements(By.xpath("/html/body/main/div/article/section[2]/table/tbody/tr[3]/th"));
+    });
+
+  this.Then(/^I should be able to transfer money between my own accounts, in this case Lönekonto to Bensinkonto$/, async function () {
+    await driver.findElement(By.xpath("/html/body/main/div/aside/nav/ul/li[6]/button/a")).click();
+    await sleep(2000);
+    await driver.findElement(By.xpath("//*[@id='sum']")).sendKeys("100");
+    await sleep(2000);
+    await driver.findElement(By.xpath("//*[@id='toAccountNumber']/option[2]")).click();
+    await sleep(2000);
+    await driver.findElement(By.xpath("/html/body/main/div/article/form/div[4]/div/button")).click();
+    await sleep(2000);
+    });
+}

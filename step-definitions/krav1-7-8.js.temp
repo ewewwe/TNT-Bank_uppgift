@@ -1,0 +1,37 @@
+let {$, sleep} = require('./funcs');
+
+
+module.exports = function(){
+
+  this.Given(/^that I visit the bank site$/, async function () {
+    await helpers.loadPage('http' + '://localhost:3000');
+  });
+
+  this.Given(/^I Press on login and enter my login information$/, async function () {
+    await driver.findElement(By.css("button[type='button']")).click();
+    await driver.findElement(By.css("input[type='text']")).sendKeys("Bengt");
+    await driver.findElement(By.css("input[type='password']")).sendKeys("Lösen0rd");
+    await driver.findElement(By.css("button[type='submit']")).click(); 
+  });
+
+  this.Given(/^Go to my accounts$/,  async function () {
+   await driver.findElement(By.xpath("//a[@href='#my-accounts']")).click();
+   });
+
+  this.Then(/^I Should be able to add a bank account, rename it and delete it again and logout.$/,  async function () {
+    await driver.findElement(By.css("*[data-target='#addAccountModal']")).click();
+    await sleep(2000);
+    await driver.findElement(By.xpath("//input[@class='form-control']")).sendKeys("testKonto");
+    await driver.findElement(By.xpath("/html/body/main/div/article/div[1]/div/div/div[3]/button[2]")).click();
+    await sleep(2000);
+    await driver.findElement(By.xpath("/html/body/main/div/article/section[1]/table/tbody/tr[4]/td[4]/button")).click();
+    await sleep(2000);
+    await driver.findElement(By.xpath("//*[@id='changeName']")).sendKeys("nyttnamn");
+    await driver.findElement(By.xpath("/html/body/main/div/article/div[2]/div/div/div[3]/button[2]")).click();
+    await sleep(2000);
+    await driver.findElement(By.xpath("/html/body/main/div/article/section[1]/table/tbody/tr[4]/td[3]/button")).click();
+    await sleep(2000);
+    await driver.findElement(By.xpath("/html/body/main/div/aside/nav/ul/li[7]/button/a")).click();
+    await sleep(2000);
+  });
+}
