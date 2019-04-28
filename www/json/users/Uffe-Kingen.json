@@ -5,12 +5,24 @@
     "accounts": [
       {
         "name": "Lönekonto",
-        "balance": 244000,
+        "balance": 234000,
         "history": [
           {
             "label": "Test",
             "amount": -5000,
-            "time": "2019-04-28 14:37"
+            "time": "2019-04-28 17:02"
+          },
+          {
+            "label": "Test",
+            "amount": -5000,
+            "time": "2019-04-28 16:59",
+            "accountName": "Lönekonto"
+          },
+          {
+            "label": "Test",
+            "amount": -5000,
+            "time": "2019-04-28 14:37",
+            "accountName": "Lönekonto"
           },
           {
             "label": "Test",

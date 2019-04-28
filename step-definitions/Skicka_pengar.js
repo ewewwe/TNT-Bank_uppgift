@@ -27,6 +27,7 @@ module.exports = function(){
       });
     
     this.Given(/^that I chose Annat konto$/, async function () {
+        await sleep(2000);
         await driver.findElement(By.css("input[value='ta']")).click();
       });
 
@@ -61,6 +62,7 @@ module.exports = function(){
       this.Then(/^I should be able to see my transaktion$/, async function () {
         await sleep(2000);
         assert.equal(await driver.findElement(By.xpath("/html/body/main/div/article/section[1]/table/tbody/tr[1]/th[2]")).getText(),"Test", "[Passed]");
+        await sleep(2000);
       });
 
       this.Given(/^that I press Logga ut$/, async function () {
