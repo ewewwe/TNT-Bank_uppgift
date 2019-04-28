@@ -1,0 +1,73 @@
+{
+  "data": {
+    "username": "Benny1",
+    "myFile": "users/Benny1-benny123",
+    "accounts": [
+      {
+        "name": "Lönekonto",
+        "balance": 53470,
+        "history": [
+          {
+            "label": "",
+            "amount": -46526,
+            "time": "2019-04-23 19:53",
+            "accountName": "Lönekonto"
+          },
+          {
+            "label": "",
+            "amount": -3,
+            "time": "2019-04-18 15:29",
+            "accountName": "Lönekonto"
+          },
+          {
+            "label": "hej",
+            "amount": -1,
+            "time": "2019-04-17 22:21",
+            "accountName": "Lönekonto"
+          }
+        ],
+        "accountNumber": "8407-141024",
+        "⚙": "Account"
+      },
+      {
+        "name": "",
+        "balance": 16529,
+        "history": [
+          {
+            "label": "",
+            "amount": -30000,
+            "time": "2019-04-23 19:54"
+          },
+          {
+            "label": "",
+            "amount": 46526,
+            "time": "2019-04-23 19:53",
+            "accountName": ""
+          },
+          {
+            "label": "",
+            "amount": 3,
+            "time": "2019-04-18 15:29",
+            "accountName": ""
+          }
+        ],
+        "accountNumber": "1612-101566",
+        "⚙": "Account"
+      },
+      {
+        "name": "",
+        "balance": 30000,
+        "history": [
+          {
+            "label": "",
+            "amount": 30000,
+            "time": "2019-04-23 19:54"
+          }
+        ],
+        "accountNumber": "5876-512127",
+        "⚙": "Account"
+      }
+    ],
+    "⚙": "User"
+  }
+}

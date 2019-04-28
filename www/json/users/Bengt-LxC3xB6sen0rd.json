@@ -1,0 +1,37 @@
+{
+  "data": {
+    "username": "Bengt",
+    "myFile": "users/Bengt-LxC3xB6sen0rd",
+    "accounts": [
+      {
+        "name": "Lönekonto",
+        "balance": 2500,
+        "history": [],
+        "accountNumber": "4724-902977",
+        "⚙": "Account"
+      },
+      {
+        "name": "Sparkonto",
+        "balance": 2300,
+        "history": [],
+        "accountNumber": "3123-757583",
+        "⚙": "Account"
+      },
+      {
+        "name": "Kortkonto",
+        "balance": 650,
+        "history": [],
+        "accountNumber": "8832-437974",
+        "⚙": "Account"
+      },
+      {
+        "name": "testkonto",
+        "balance": 0,
+        "history": [],
+        "accountNumber": "1619-333942",
+        "⚙": "Account"
+      }
+    ],
+    "⚙": "User"
+  }
+}

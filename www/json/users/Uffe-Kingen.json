@@ -1,0 +1,54 @@
+{
+  "data": {
+    "username": "Uffe",
+    "myFile": "users/Uffe-Kingen",
+    "accounts": [
+      {
+        "name": "Lönekonto",
+        "balance": 244000,
+        "history": [
+          {
+            "label": "Test",
+            "amount": -5000,
+            "time": "2019-04-28 14:37"
+          },
+          {
+            "label": "Test",
+            "amount": -5000,
+            "time": "2019-04-28 14:36",
+            "accountName": "Lönekonto"
+          },
+          {
+            "label": "Test",
+            "amount": -5000,
+            "time": "2019-04-28 14:35",
+            "accountName": "Lönekonto"
+          },
+          {
+            "label": "Test",
+            "amount": -5000,
+            "time": "2019-04-28 14:34",
+            "accountName": "Lönekonto"
+          }
+        ],
+        "accountNumber": "6609-461289",
+        "⚙": "Account"
+      },
+      {
+        "name": "Vaskkonto",
+        "balance": 150000,
+        "history": [],
+        "accountNumber": "9605-384636",
+        "⚙": "Account"
+      },
+      {
+        "name": "Bilkonto",
+        "balance": 24000000,
+        "history": [],
+        "accountNumber": "5278-673662",
+        "⚙": "Account"
+      }
+    ],
+    "⚙": "User"
+  }
+}

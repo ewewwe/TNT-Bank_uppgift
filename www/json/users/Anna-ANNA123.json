@@ -1,0 +1,90 @@
+{
+  "data": {
+    "username": "Anna",
+    "myFile": "users/Anna-ANNA123",
+    "accounts": [
+      {
+        "name": "Lönekonto",
+        "balance": 0,
+        "history": [
+          {
+            "label": "",
+            "amount": -100,
+            "time": "2019-04-28 14:24"
+          },
+          {
+            "label": "",
+            "amount": -100,
+            "time": "2019-04-28 14:23",
+            "accountName": "Lönekonto"
+          },
+          {
+            "label": "",
+            "amount": -100,
+            "time": "2019-04-28 14:23",
+            "accountName": "Lönekonto"
+          },
+          {
+            "label": "",
+            "amount": -100,
+            "time": "2019-04-28 14:22",
+            "accountName": "Lönekonto"
+          },
+          {
+            "label": "",
+            "amount": -100,
+            "time": "2019-04-28 14:21",
+            "accountName": "Lönekonto"
+          }
+        ],
+        "accountNumber": "930-492896",
+        "⚙": "Account"
+      },
+      {
+        "name": "Bensinkonto",
+        "balance": 1500,
+        "history": [
+          {
+            "label": "",
+            "amount": 100,
+            "time": "2019-04-28 14:24"
+          },
+          {
+            "label": "",
+            "amount": 100,
+            "time": "2019-04-28 14:23",
+            "accountName": "Bensinkonto"
+          },
+          {
+            "label": "",
+            "amount": 100,
+            "time": "2019-04-28 14:23",
+            "accountName": "Bensinkonto"
+          },
+          {
+            "label": "",
+            "amount": 100,
+            "time": "2019-04-28 14:22",
+            "accountName": "Bensinkonto"
+          },
+          {
+            "label": "",
+            "amount": 100,
+            "time": "2019-04-28 14:21",
+            "accountName": "Bensinkonto"
+          }
+        ],
+        "accountNumber": "7899-836536",
+        "⚙": "Account"
+      },
+      {
+        "name": "Sparkonto",
+        "balance": 25,
+        "history": [],
+        "accountNumber": "6671-898121",
+        "⚙": "Account"
+      }
+    ],
+    "⚙": "User"
+  }
+}

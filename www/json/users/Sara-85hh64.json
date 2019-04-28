@@ -1,0 +1,30 @@
+{
+  "data": {
+    "username": "Sara",
+    "myFile": "users/Sara-85hh64",
+    "accounts": [
+      {
+        "name": "Lönekonto",
+        "balance": 6520,
+        "history": [],
+        "accountNumber": "9463-022625",
+        "⚙": "Account"
+      },
+      {
+        "name": "Långtidsspar",
+        "balance": 250000,
+        "history": [],
+        "accountNumber": "4615-296817",
+        "⚙": "Account"
+      },
+      {
+        "name": "Nöjeskonto",
+        "balance": 6843,
+        "history": [],
+        "accountNumber": "7958-826746",
+        "⚙": "Account"
+      }
+    ],
+    "⚙": "User"
+  }
+}
