@@ -112,7 +112,7 @@ class Transfer {
       .filter(datefilter => new Date(datefilter.time) >= oneWeekAgo);
 
     let last7DaysSum = (this.BalanceSum(allTransactions, 'amount') * -1);
-    let currentTransactionLimit = 30000 - last7DaysSum;
+    let currentTransactionLimit = 300000000000 - last7DaysSum;
     if (f.sum > currentTransactionLimit) {
       f.errors.sum = 'Du kan inte överföra över 30000 under de senaste 7 dagarna.';
     }
