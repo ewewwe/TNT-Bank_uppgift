@@ -11,8 +11,10 @@ module.exports = function(){
       });
     
     this.When(/^I enter my information$/, async function () {
+        await sleep(2000);
         await driver.findElement(By.css("input[type='text']")).sendKeys("Uffe");
         await driver.findElement(By.css("input[type='password']")).sendKeys("Kingen");
+        await sleep(2000);
       });
     
     this.Given(/^Press the login button$/, async function () {
@@ -23,6 +25,7 @@ module.exports = function(){
       });
 
     this.Given(/^that I press Överföringar andra konton$/, async function () {
+        await sleep(2000);
         await driver.findElement(By.css("a[href='#transfer']")).click();
       });
     
@@ -32,14 +35,17 @@ module.exports = function(){
       });
 
     this.Given(/^that I enter account number$/, async function () {
+        await sleep(2000);
         await driver.findElement(By.css("input[id='toAccountNumber']")).sendKeys("6981-861418");
       });
      
     this.Given(/^that I enter amount of money that are less than my max transfer amount$/, async function () {
+        await sleep(2000);
         await driver.findElement(By.css("input[id='sum']")).sendKeys("5000");
       });
 
       this.Given(/^that I enter Test as a message$/, async function () {
+        await sleep(2000);
         await driver.findElement(By.css("input[id='label']")).sendKeys("Test");
       });
 
@@ -48,6 +54,7 @@ module.exports = function(){
       });
 
       this.Given(/^I accept the pop\-up$/, async function () {
+        await sleep(2000);
         await driver.switchTo().alert().accept();
         //await sleep(10000);
       });
@@ -74,14 +81,17 @@ module.exports = function(){
       });
 
       this.When(/^I enter the recipents information$/, async function () {
+        await sleep(2000);
         await driver.findElement(By.css("input[type='text']")).sendKeys("Sara");
         await driver.findElement(By.css("input[type='password']")).sendKeys("85hh64");
+        await sleep(2000);
       });
 
       this.Then(/^I should log into the recipents account$/, async function () {
       });
 
       this.Given(/^that I press the Start button$/, async function () {
+        await sleep(2000);
         await driver.findElement(By.css("a[href='#start']")).click();
       });
       
