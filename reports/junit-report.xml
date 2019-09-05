@@ -2,68 +2,68 @@
 <testsuites>
     <testsuite name="skicka-pengar;skicka-pengar-till-någon-annans-konto" tests="22" failures="1" skipped="0">
         <properties>
-            <property name="URI" value="F:/Benny/Skola/Projekt/features/Skicka_pengar.feature">
+            <property name="URI" value="C:/Users/ruben/Documents/Bank_uppgift/TNT-Bank_uppgift/features/Skicka_pengar.feature">
             </property>
         </properties>
-        <testcase name="Given that I visit the bank site" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="3.637841099">
+        <testcase name="Given that I visit the bank site" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="4.813778458">
         </testcase>
-        <testcase name="And I press on login" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="0.071626501">
+        <testcase name="And I press on login" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="0.124615486">
         </testcase>
-        <testcase name="When I enter my information" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="0.137701901">
+        <testcase name="When I enter my information" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="4.237234952">
         </testcase>
-        <testcase name="Given Press the login button" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="0.056275999">
+        <testcase name="Given Press the login button" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="0.097162306">
         </testcase>
-        <testcase name="Then I should log into my account" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="0.000120201">
+        <testcase name="Then I should log into my account" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="0.000266796">
         </testcase>
-        <testcase name="Given that I press Överföringar andra konton" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="0.1111328">
+        <testcase name="Given that I press Överföringar andra konton" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="2.107485586">
         </testcase>
-        <testcase name="And that I chose Annat konto" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="2.05222">
+        <testcase name="And that I chose Annat konto" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="2.113262038">
         </testcase>
-        <testcase name="And that I enter account number" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="0.0857268">
+        <testcase name="And that I enter account number" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="2.144375297">
         </testcase>
-        <testcase name="And that I enter amount of money that are less than my max transfer amount" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="0.058325899">
+        <testcase name="And that I enter amount of money that are less than my max transfer amount" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="2.094228586">
         </testcase>
-        <testcase name="And that I enter Test as a message" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="0.0604654">
+        <testcase name="And that I enter Test as a message" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="2.097782258">
         </testcase>
-        <testcase name="And I press Utför" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="0.0535477">
+        <testcase name="And I press Utför" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="0.114856126">
         </testcase>
-        <testcase name="And I accept the pop-up" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="0.0049965">
+        <testcase name="And I accept the pop-up" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="2.00831075">
         </testcase>
-        <testcase name="Then the money should be sent" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="0.000182201">
+        <testcase name="Then the money should be sent" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="0.000216418">
         </testcase>
-        <testcase name="Given that I press Start" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="0.0845792">
+        <testcase name="Given that I press Start" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="0.159293728">
         </testcase>
-        <testcase name="Then I should be able to see my transaktion" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="4.0328286">
+        <testcase name="Then I should be able to see my transaktion" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="5.069513271">
         </testcase>
-        <testcase name="Given that I press Logga ut" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="0.074576001">
+        <testcase name="Given that I press Logga ut" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="0.106244139">
         </testcase>
-        <testcase name="And that I press Logga in" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="0.051031199">
+        <testcase name="And that I press Logga in" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="0.112469876">
         </testcase>
-        <testcase name="When I enter the recipents information" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="0.109137001">
+        <testcase name="When I enter the recipents information" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="4.211592793">
         </testcase>
-        <testcase name="Given Press the login button" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="0.0557202">
+        <testcase name="Given Press the login button" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="0.088073276">
         </testcase>
-        <testcase name="Then I should log into the recipents account" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="0.0001227">
+        <testcase name="Then I should log into the recipents account" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="0.000158844">
         </testcase>
-        <testcase name="Given that I press the Start button" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="0.072996701">
+        <testcase name="Given that I press the Start button" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="2.074316614">
         </testcase>
-        <testcase name="Then I should be able to see the recipents transaktion" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="2.0127284">
+        <testcase name="Then I should be able to see the recipents transaktion" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="4.01774831">
             <failure message="NoSuchElementError: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/main/div/article/section[1]/table/tbody/tr[1]/th[2]&quot;}">NoSuchElementError: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/main/div/article/section[1]/table/tbody/tr[1]/th[2]&quot;}
-  (Session info: chrome=74.0.3729.108)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.17763 x86_64)
-    at Object.checkLegacyResponse (F:\Benny\Skola\Projekt\node_modules\selenium-webdriver\lib\error.js:529:15)
-    at parseHttpResponse (F:\Benny\Skola\Projekt\node_modules\selenium-webdriver\lib\http.js:509:13)
-    at doSend.then.response (F:\Benny\Skola\Projekt\node_modules\selenium-webdriver\lib\http.js:441:30)
+  (Session info: chrome=76.0.3809.100)
+  (Driver info: chromedriver=76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}),platform=Windows NT 10.0.17134 x86_64)
+    at Object.checkLegacyResponse (C:\Users\ruben\Documents\Bank_uppgift\TNT-Bank_uppgift\node_modules\selenium-webdriver\lib\error.js:529:15)
+    at parseHttpResponse (C:\Users\ruben\Documents\Bank_uppgift\TNT-Bank_uppgift\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at doSend.then.response (C:\Users\ruben\Documents\Bank_uppgift\TNT-Bank_uppgift\node_modules\selenium-webdriver\lib\http.js:441:30)
     at process._tickCallback (internal/process/next_tick.js:68:7)
 From: Task: WebDriver.findElement(By(xpath, /html/body/main/div/article/section[1]/table/tbody/tr[1]/th[2]))
-    at thenableWebDriverProxy.schedule (F:\Benny\Skola\Projekt\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
-    at thenableWebDriverProxy.findElement (F:\Benny\Skola\Projekt\node_modules\selenium-webdriver\lib\webdriver.js:1014:17)
-    at createWorld.&lt;anonymous&gt; (F:\Benny\Skola\Projekt\step-definitions\Skicka_pengar.js:90:35)
+    at thenableWebDriverProxy.schedule (C:\Users\ruben\Documents\Bank_uppgift\TNT-Bank_uppgift\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
+    at thenableWebDriverProxy.findElement (C:\Users\ruben\Documents\Bank_uppgift\TNT-Bank_uppgift\node_modules\selenium-webdriver\lib\webdriver.js:1014:17)
+    at createWorld.&lt;anonymous&gt; (C:\Users\ruben\Documents\Bank_uppgift\TNT-Bank_uppgift\step-definitions\Skicka_pengar.js:135:30)
 From: Task: WebElement.getText()
-    at thenableWebDriverProxy.schedule (F:\Benny\Skola\Projekt\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
-    at WebElementPromise.schedule_ (F:\Benny\Skola\Projekt\node_modules\selenium-webdriver\lib\webdriver.js:2015:25)
-    at WebElementPromise.getText (F:\Benny\Skola\Projekt\node_modules\selenium-webdriver\lib\webdriver.js:2281:17)
-    at createWorld.&lt;anonymous&gt; (F:\Benny\Skola\Projekt\step-definitions\Skicka_pengar.js:90:123)</failure>
+    at thenableWebDriverProxy.schedule (C:\Users\ruben\Documents\Bank_uppgift\TNT-Bank_uppgift\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
+    at WebElementPromise.schedule_ (C:\Users\ruben\Documents\Bank_uppgift\TNT-Bank_uppgift\node_modules\selenium-webdriver\lib\webdriver.js:2015:25)
+    at WebElementPromise.getText (C:\Users\ruben\Documents\Bank_uppgift\TNT-Bank_uppgift\node_modules\selenium-webdriver\lib\webdriver.js:2281:17)
+    at createWorld.&lt;anonymous&gt; (C:\Users\ruben\Documents\Bank_uppgift\TNT-Bank_uppgift\step-definitions\Skicka_pengar.js:135:118)</failure>
         </testcase>
     </testsuite>
 </testsuites>
