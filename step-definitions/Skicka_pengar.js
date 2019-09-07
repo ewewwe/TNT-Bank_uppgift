@@ -3,7 +3,7 @@ let {$, sleep} = require('./funcs');
 const ares = require('ares-helper'); // laddar in ares helper
 ares.debug = true; // vi får debug info
 ares.setProjectInfo({ // hjälpfunktion för att kunna "logga in" på ares
-  "userToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1Njc3NTUzMzYsImVtYWlsIjoicnUubmlsc3NvbkBnbWFpbC5jb20iLCJpYXQiOjE1Njc2Njg5MzZ9.o_iUaAKSDgNMdBzosk_-IhWGwz545td81OPfhrgmg70",
+  "userToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1Njc5Mzc0MTUsImVtYWlsIjoiZGlhbmFAc2htb25kcmFrLnNlIiwiaWF0IjoxNTY3ODUxMDE1fQ.cTqGi6obIjl3uHSft4kzX4fA3DtTJeKCNqeg9lrJdEA",
   "workspaceName": "outlook_default",
   "projectKey": "5d70bb183e47305847483f78",
   "projectName": "swedenbank"
@@ -17,10 +17,11 @@ module.exports = function(){
 
     this.Given(/^that I visit the bank site$/, async function () {
       await ares.startTests(); // kopplar upp till Ares med våra login-uppgifter
+      
       await ares.startModule({ // definiera en testrapport (i e testmodul i en testrapport)
-      moduleName: 'swedenbank',
-      totalTests: 2
-    });
+        moduleName: 'skicka pengar',
+        totalTests: 2
+      });
 
         await helpers.loadPage('http' + '://localhost:3000');
       });
@@ -87,22 +88,17 @@ module.exports = function(){
       
       this.Then(/^I should be able to see my transaktion$/, async function () {
         await sleep(2000);
-        let a = false;
-        if (assert.equal(await driver.findElement(By.xpath("/html/body/main/div/article/section[1]/table/tbody/tr[1]/th[2]")).getText(),"Test", "[Passed]") == true){
-          a = true;
-        }
-        else{
-          a = false;
-        }
+        let result = await driver.findElement(By.xpath("/html/body/main/div/article/section[1]/table/tbody/tr[1]/th[2]")).getText();
         
-        await sleep(2000);
 
         await ares.testResult({ // skicka resultatet till testrapporten
-          moduleName: 'swedenbank',
+          moduleName: 'skicka pengar',
           title: 'Syns transaktionen',
-          passed: a, // HÄR skickar jag in mitt resultat ifrån t ex Selenium
+          passed: (result==="Test"), // HÄR skickar jag in mitt resultat ifrån t ex Selenium
           errorMessage: 'Den skall synas'
         });
+
+        assert.equal(result,"Test", "[Passed]")
       });
 
       this.Given(/^that I press Logga ut$/, async function () {
@@ -130,40 +126,22 @@ module.exports = function(){
       
       this.Then(/^I should be able to see the recipents transaktion$/, async function () {
         await sleep(2000);
-        let b = false;
-        await sleep(2000);
         let t = await driver.findElement(By.xpath("/html/body/main/div/article/section[1]/table/tbody/tr[1]/th[2]")).getText()
-        if(assert.equal(t,"Test", "[Passed]") == true){
-          b = true;
-          await ares.testResult({ // skicka resultatet till testrapporten
-            moduleName: 'swedenbank',
+ 
+        await ares.testResult({ // skicka resultatet till testrapporten
+            moduleName: 'skicka pengar',
             title: 'Syns transaktionen hos motagare',
-            passed: b, // HÄR skickar jag in mitt resultat ifrån t ex Selenium
+            passed: (t === "Test"), // HÄR skickar jag in mitt resultat ifrån t ex Selenium
             errorMessage: 'Den skall synas'
-          });
-  
-          await ares.endModule({ // avslutar vi denna testrapport
-            moduleName: 'swedbank',
-          });
-          
-          await ares.endTests();  // avslutar hela ares
-        }
-        else{
-          b = false;
-          await ares.testResult({ // skicka resultatet till testrapporten
-            moduleName: 'swedenbank',
-            title: 'Syns transaktionen hos motagare',
-            passed: b, // HÄR skickar jag in mitt resultat ifrån t ex Selenium
-            errorMessage: 'Den skall synas'
-          });
-  
-          await ares.endModule({ // avslutar vi denna testrapport
-            moduleName: 'swedbank',
-          });
-          
-          await ares.endTests();  // avslutar hela ares
-        }
-    
+        });  
+        await ares.endModule({ // avslutar vi denna testrapport
+          moduleName: 'skicka pengar',
+        });
+        
+        await ares.endTests();  // avslutar hela ares
+                
+        assert.equal(t,"Test", "[Passed]")
+
       });
 
      

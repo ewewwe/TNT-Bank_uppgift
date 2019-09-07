@@ -1,6 +1,21 @@
+const ares = require('ares-helper'); // laddar in ares helper
+ares.debug = true; // vi får debug info
+ares.setProjectInfo({
+    "userToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1Njc5Mzc0MTUsImVtYWlsIjoiZGlhbmFAc2htb25kcmFrLnNlIiwiaWF0IjoxNTY3ODUxMDE1fQ.cTqGi6obIjl3uHSft4kzX4fA3DtTJeKCNqeg9lrJdEA",
+    "workspaceName": "shmondrak_default",
+    "projectKey": "5d73c4643e473058474841db",
+    "projectName": "Diana Bank"
+  });
+
 module.exports = function(){
 
+  process.on('exit',function(){
+    ares.endTests() // avslutar hela ares
+  })
+
+
     this.Given(/^avsändaren har 1000 kr på kontot$/, async function () {
+      await ares.startTests();
       callback(null, 'pending');
     });
   
