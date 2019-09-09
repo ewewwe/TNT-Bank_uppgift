@@ -1,69 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-    <testsuite name="skicka-pengar;skicka-pengar-till-någon-annans-konto" tests="22" failures="1" skipped="0">
+    <testsuite name=";" tests="4" failures="1" skipped="0">
         <properties>
-            <property name="URI" value="/Users/dianashmondrak/projekt/TNT-Bank_uppgift/features/Skicka_pengar.feature">
+            <property name="URI" value="F:/Benny/Skola/Projekt/features/krav1-7-8.feature">
             </property>
         </properties>
-        <testcase name="Given that I visit the bank site" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="3.73987113">
+        <testcase name="Given that I visit the bank site" classname=";" time="3.8463032">
         </testcase>
-        <testcase name="And I press on login" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="0.093578534">
+        <testcase name="When I Press on login and enter my login information" classname=";" time="0.2835736">
         </testcase>
-        <testcase name="When I enter my information" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="4.195899545">
+        <testcase name="And Go to my accounts" classname=";" time="0.107604199">
         </testcase>
-        <testcase name="Given Press the login button" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="0.06916626">
-        </testcase>
-        <testcase name="Then I should log into my account" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="0.000219046">
-        </testcase>
-        <testcase name="Given that I press Överföringar andra konton" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="2.084231286">
-        </testcase>
-        <testcase name="And that I chose Annat konto" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="2.073644432">
-        </testcase>
-        <testcase name="And that I enter account number" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="2.126472331">
-        </testcase>
-        <testcase name="And that I enter amount of money that are less than my max transfer amount" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="2.080238197">
-        </testcase>
-        <testcase name="And that I enter Test as a message" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="2.08338714">
-        </testcase>
-        <testcase name="And I press Utför" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="0.084138476">
-        </testcase>
-        <testcase name="And I accept the pop-up" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="2.01471195">
-        </testcase>
-        <testcase name="Then the money should be sent" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="0.000351938">
-        </testcase>
-        <testcase name="Given that I press Start" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="0.109409203">
-        </testcase>
-        <testcase name="Then I should be able to see my transaktion" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="3.014548115">
-        </testcase>
-        <testcase name="Given that I press Logga ut" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="0.086694733">
-        </testcase>
-        <testcase name="And that I press Logga in" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="0.066020413">
-        </testcase>
-        <testcase name="When I enter the recipents information" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="4.16808864">
-        </testcase>
-        <testcase name="Given Press the login button" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="0.071609701">
-        </testcase>
-        <testcase name="Then I should log into the recipents account" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="0.000190696">
-        </testcase>
-        <testcase name="Given that I press the Start button" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="2.077090134">
-        </testcase>
-        <testcase name="Then I should be able to see the recipents transaktion" classname="skicka-pengar;skicka-pengar-till-någon-annans-konto" time="2.022437689">
-            <failure message="NoSuchElementError: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/main/div/article/section[1]/table/tbody/tr[1]/th[2]&quot;}">NoSuchElementError: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/main/div/article/section[1]/table/tbody/tr[1]/th[2]&quot;}
-  (Session info: chrome=76.0.3809.132)
-  (Driver info: chromedriver=76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}),platform=Mac OS X 10.13.6 x86_64)
-    at Object.checkLegacyResponse (/Users/dianashmondrak/projekt/TNT-Bank_uppgift/node_modules/selenium-webdriver/lib/error.js:529:15)
-    at parseHttpResponse (/Users/dianashmondrak/projekt/TNT-Bank_uppgift/node_modules/selenium-webdriver/lib/http.js:509:13)
-    at doSend.then.response (/Users/dianashmondrak/projekt/TNT-Bank_uppgift/node_modules/selenium-webdriver/lib/http.js:441:30)
-    at process._tickCallback (internal/process/next_tick.js:68:7)
-From: Task: WebDriver.findElement(By(xpath, /html/body/main/div/article/section[1]/table/tbody/tr[1]/th[2]))
-    at thenableWebDriverProxy.schedule (/Users/dianashmondrak/projekt/TNT-Bank_uppgift/node_modules/selenium-webdriver/lib/webdriver.js:807:17)
-    at thenableWebDriverProxy.findElement (/Users/dianashmondrak/projekt/TNT-Bank_uppgift/node_modules/selenium-webdriver/lib/webdriver.js:1014:17)
-    at createWorld.&lt;anonymous&gt; (/Users/dianashmondrak/projekt/TNT-Bank_uppgift/step-definitions/Skicka_pengar.js:129:30)
-From: Task: WebElement.getText()
-    at thenableWebDriverProxy.schedule (/Users/dianashmondrak/projekt/TNT-Bank_uppgift/node_modules/selenium-webdriver/lib/webdriver.js:807:17)
-    at WebElementPromise.schedule_ (/Users/dianashmondrak/projekt/TNT-Bank_uppgift/node_modules/selenium-webdriver/lib/webdriver.js:2015:25)
-    at WebElementPromise.getText (/Users/dianashmondrak/projekt/TNT-Bank_uppgift/node_modules/selenium-webdriver/lib/webdriver.js:2281:17)
-    at createWorld.&lt;anonymous&gt; (/Users/dianashmondrak/projekt/TNT-Bank_uppgift/step-definitions/Skicka_pengar.js:129:118)</failure>
+        <testcase name="Then I Should be able to add a bank account, rename it and delete it again and logout." classname=";" time="12.591829099">
+            <failure message="ReferenceError: t is not defined">ReferenceError: t is not defined
+    at createWorld.&lt;anonymous&gt; (F:\Benny\Skola\Projekt\step-definitions\krav1-7-8.js:58:14)</failure>
         </testcase>
     </testsuite>
 </testsuites>
