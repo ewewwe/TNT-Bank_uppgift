@@ -55,7 +55,8 @@ module.exports = function(){
       moduleName: 'krav-1-7-8',
       title: 'krav-1-7-8',
       passed: (t===true), // HÄR skickar jag in mitt resultat ifrån t ex Selenium
-      errorMessage: 'Den skall testas'
+      errorMessage: 'Den skall testas',
+      testBrowser: "Chrome"
       });
   
     await ares.endModule({ // avslutar vi denna testrapport

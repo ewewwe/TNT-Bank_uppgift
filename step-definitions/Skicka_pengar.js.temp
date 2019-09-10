@@ -136,7 +136,8 @@ module.exports = function(){
           moduleName: 'skicka pengar',
           title: 'Syns transaktionen hos motagare',
           passed: (t === "Test"), // HÄR skickar jag in mitt resultat ifrån t ex Selenium
-          errorMessage: 'Det skall synas'
+          errorMessage: 'Det skall synas',
+          testBrowser: "Chrome"
         });  
         await ares.endModule({ // avslutar vi denna testrapport
         moduleName: 'skicka pengar',
