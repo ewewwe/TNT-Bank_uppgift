@@ -38,7 +38,7 @@ module.exports = function(){
       });
     
     this.Given(/^Press the login button$/, async function () {
-        await driver.findElement(By.css("button[type='submit']")).click();
+        await driver.findElement(By.css("button.btn:nth-child(4)")).click();
       });
     
     this.Then(/^I should log into my account$/,  async function () {
@@ -136,7 +136,7 @@ module.exports = function(){
           moduleName: 'skicka pengar',
           title: 'Syns transaktionen hos motagare',
           passed: (t === "Test"), // HÄR skickar jag in mitt resultat ifrån t ex Selenium
-          errorMessage: 'Den skall synas'
+          errorMessage: 'Det skall synas'
         });  
         await ares.endModule({ // avslutar vi denna testrapport
         moduleName: 'skicka pengar',
