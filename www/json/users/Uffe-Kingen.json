@@ -10,7 +10,8 @@
           {
             "label": "Test",
             "amount": -5000,
-            "time": "2019-09-10 16:02"
+            "time": "2019-09-10 16:02",
+            "accountName": "Lönekonto"
           },
           {
             "label": "Test",

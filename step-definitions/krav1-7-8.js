@@ -17,7 +17,7 @@ module.exports = function(){
     await ares.startTests(); // kopplar upp till Ares med våra login-uppgifter
       
     await ares.startModule({ // definiera en testrapport (i e testmodul i en testrapport)
-      moduleName: 'krav1-7-8',
+      moduleName: 'krav-1-7-8',
       totalTests: 1
     });
 
@@ -46,9 +46,10 @@ module.exports = function(){
     await driver.findElement(By.xpath("//*[@id='changeName']")).sendKeys("nyttnamn");
     await driver.findElement(By.xpath("/html/body/main/div/article/div[2]/div/div/div[3]/button[2]")).click();
     await sleep(2000);
+    await sleep(2000);
     await driver.findElement(By.xpath("/html/body/main/div/article/section[1]/table/tbody/tr[4]/td[3]/button")).click();
     await sleep(2000);
-    let t = true;
+    let t=true;
 
     await ares.testResult({ // skicka resultatet till testrapporten
       moduleName: 'krav-1-7-8',
@@ -63,7 +64,7 @@ module.exports = function(){
   
     await ares.endTests();  // avslutar hela ares
   
-    assert.equal(t, true, "[Passed]")
+    //assert.equal(t, true, "[Passed]")
     
     await sleep(2000);
     await driver.findElement(By.xpath("/html/body/main/div/aside/nav/ul/li[7]/button/a")).click();
