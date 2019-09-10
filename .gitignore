@@ -1,2 +1,5 @@
 node_modules
-reports
+
+reports/cucumber-report.html
+reports/cucumber-report.json
+reports/junit-report.xml

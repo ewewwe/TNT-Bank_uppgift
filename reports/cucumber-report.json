@@ -14,7 +14,7 @@
             "name": "that I visit the bank site",
             "result": {
               "status": "passed",
-              "duration": 3900752499
+              "duration": 4141783900
             },
             "line": 6,
             "match": {
@@ -27,7 +27,7 @@
             "name": "I Press on login and enter my login information",
             "result": {
               "status": "passed",
-              "duration": 277968700
+              "duration": 297350299
             },
             "line": 7,
             "match": {
@@ -40,7 +40,7 @@
             "name": "Go to my accounts",
             "result": {
               "status": "passed",
-              "duration": 99405000
+              "duration": 114726000
             },
             "line": 8,
             "match": {
@@ -53,7 +53,7 @@
             "name": "I Should be able to add a bank account, rename it and delete it again and logout.",
             "result": {
               "status": "passed",
-              "duration": 16328236700
+              "duration": 16396479700
             },
             "line": 9,
             "match": {
@@ -65,7 +65,7 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 237188100
+              "duration": 116634600
             },
             "hidden": true,
             "match": {
