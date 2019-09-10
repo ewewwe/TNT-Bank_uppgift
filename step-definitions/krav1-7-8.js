@@ -48,21 +48,26 @@ module.exports = function(){
     await sleep(2000);
     await driver.findElement(By.xpath("/html/body/main/div/article/section[1]/table/tbody/tr[4]/td[3]/button")).click();
     await sleep(2000);
-    await driver.findElement(By.xpath("/html/body/main/div/aside/nav/ul/li[7]/button/a")).click();
-    await sleep(2000);
-    
+    let t = true;
 
     await ares.testResult({ // skicka resultatet till testrapporten
-    moduleName: 'krav-1-7-8',
-    title: 'test123',
-    passed: bgColourTestResult, // HÄR skickar jag in mitt resultat ifrån t ex Selenium
-    errorMessage: 'Den skall testas'
-    });
-
+      moduleName: 'krav-1-7-8',
+      title: 'krav-1-7-8',
+      passed: (t===true), // HÄR skickar jag in mitt resultat ifrån t ex Selenium
+      errorMessage: 'Den skall testas'
+      });
+  
     await ares.endModule({ // avslutar vi denna testrapport
-    moduleName: 'skicka test',
+      moduleName: 'krav-1-7-8',
+      });
+  
+    await ares.endTests();  // avslutar hela ares
+  
+    assert.equal(t, true, "[Passed]")
+    
+    await sleep(2000);
+    await driver.findElement(By.xpath("/html/body/main/div/aside/nav/ul/li[7]/button/a")).click();
+    await sleep(2000);
     });
 
-    await ares.endTests();  // avslutar hela ares
-  });
   }
