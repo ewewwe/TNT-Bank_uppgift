@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-    <testsuite name=";" tests="4" failures="1" skipped="0">
+    <testsuite name=";" tests="4" failures="0" skipped="0">
         <properties>
             <property name="URI" value="F:/Benny/Skola/Projekt/features/krav1-7-8.feature">
             </property>
         </properties>
-        <testcase name="Given that I visit the bank site" classname=";" time="3.787356201">
+        <testcase name="Given that I visit the bank site" classname=";" time="3.900752499">
         </testcase>
-        <testcase name="When I Press on login and enter my login information" classname=";" time="0.2846897">
+        <testcase name="When I Press on login and enter my login information" classname=";" time="0.2779687">
         </testcase>
-        <testcase name="And Go to my accounts" classname=";" time="0.1006725">
+        <testcase name="And Go to my accounts" classname=";" time="0.099405">
         </testcase>
-        <testcase name="Then I Should be able to add a bank account, rename it and delete it again and logout." classname=";" time="15.0005631">
-            <failure message="function timed out after 15000 milliseconds">function timed out after 15000 milliseconds</failure>
+        <testcase name="Then I Should be able to add a bank account, rename it and delete it again and logout." classname=";" time="16.3282367">
         </testcase>
     </testsuite>
 </testsuites>

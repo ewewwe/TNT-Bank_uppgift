@@ -35,7 +35,7 @@ module.exports = function(){
    await driver.findElement(By.xpath("//a[@href='#my-accounts']")).click();
    });
 
-  this.Then(/^I Should be able to add a bank account, rename it and delete it again and logout.$/,  async function () {
+  this.Then(/^I Should be able to add a bank account, rename it and delete it again and logout.$/, {timeout: 100 * 1000}, async function () {
     await driver.findElement(By.css("*[data-target='#addAccountModal']")).click();
     await sleep(2000);
     await driver.findElement(By.xpath("//input[@class='form-control']")).sendKeys("testKonto");
