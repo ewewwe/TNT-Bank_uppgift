@@ -2,7 +2,7 @@ Feature: Sweden Bank
 When entering the bank site
 everything should work according to specifications.
 
-Scenario: Bank 1,11
+Scenario: Transaktionshistorik (5 senaste) och Överföring mellan egna konton
 Given that I visit the bank site
 And I press on login and enter my login information
 Then I should be able to see my five last transactions
