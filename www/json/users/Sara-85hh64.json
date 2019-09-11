@@ -5,8 +5,56 @@
     "accounts": [
       {
         "name": "Lönekonto",
-        "balance": 6520,
-        "history": [],
+        "balance": 5720,
+        "history": [
+          {
+            "label": "Test 100",
+            "amount": -100,
+            "time": "2019-09-11 19:57"
+          },
+          {
+            "label": "Test 100",
+            "amount": -100,
+            "time": "2019-09-11 19:56",
+            "accountName": "Lönekonto"
+          },
+          {
+            "label": "Test 100",
+            "amount": -100,
+            "time": "2019-09-11 19:56",
+            "accountName": "Lönekonto"
+          },
+          {
+            "label": "Test 100",
+            "amount": -100,
+            "time": "2019-09-11 19:55",
+            "accountName": "Lönekonto"
+          },
+          {
+            "label": "Test 100",
+            "amount": -100,
+            "time": "2019-09-11 19:53",
+            "accountName": "Lönekonto"
+          },
+          {
+            "label": "Test 100",
+            "amount": -100,
+            "time": "2019-09-11 19:51",
+            "accountName": "Lönekonto"
+          },
+          {
+            "label": "",
+            "amount": -100,
+            "time": "2019-09-11 19:49",
+            "accountName": "Lönekonto"
+          },
+          {
+            "label": "Test 100",
+            "amount": -100,
+            "time": "2019-09-11 19:47",
+            "accountName": "Lönekonto"
+          }
+        ],
         "accountNumber": "9463-022625",
         "⚙": "Account"
       },

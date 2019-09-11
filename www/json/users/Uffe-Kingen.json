@@ -5,12 +5,168 @@
     "accounts": [
       {
         "name": "Lönekonto",
-        "balance": 224000,
+        "balance": 94000,
         "history": [
           {
             "label": "Test",
             "amount": -5000,
-            "time": "4/29/2019, 8:50 AM"
+            "time": "2019-09-10 18:23"
+          },
+          {
+            "label": "Test",
+            "amount": -5000,
+            "time": "2019-09-10 17:50",
+            "accountName": "Lönekonto"
+          },
+          {
+            "label": "Test",
+            "amount": -5000,
+            "time": "2019-09-10 17:37",
+            "accountName": "Lönekonto"
+          },
+          {
+            "label": "Test",
+            "amount": -5000,
+            "time": "2019-09-10 16:02",
+            "accountName": "Lönekonto"
+          },
+          {
+            "label": "Test",
+            "amount": -5000,
+            "time": "2019-09-10 16:00",
+            "accountName": "Lönekonto"
+          },
+          {
+            "label": "Test",
+            "amount": -5000,
+            "time": "2019-09-09 17:26",
+            "accountName": "Lönekonto"
+          },
+          {
+            "label": "Test",
+            "amount": -5000,
+            "time": "2019-09-07 18:14",
+            "accountName": "Lönekonto"
+          },
+          {
+            "label": "Test",
+            "amount": -5000,
+            "time": "2019-09-07 18:08",
+            "accountName": "Lönekonto"
+          },
+          {
+            "label": "Test",
+            "amount": -5000,
+            "time": "9/5/2019, 12:26 PM",
+            "accountName": "Lönekonto"
+          },
+          {
+            "label": "Test",
+            "amount": -5000,
+            "time": "9/5/2019, 12:05 PM",
+            "accountName": "Lönekonto"
+          },
+          {
+            "label": "Test",
+            "amount": -5000,
+            "time": "9/5/2019, 11:59 AM",
+            "accountName": "Lönekonto"
+          },
+          {
+            "label": "Test",
+            "amount": -5000,
+            "time": "9/5/2019, 11:58 AM",
+            "accountName": "Lönekonto"
+          },
+          {
+            "label": "Test",
+            "amount": -5000,
+            "time": "9/5/2019, 11:54 AM",
+            "accountName": "Lönekonto"
+          },
+          {
+            "label": "Test",
+            "amount": -5000,
+            "time": "9/5/2019, 11:51 AM",
+            "accountName": "Lönekonto"
+          },
+          {
+            "label": "Test",
+            "amount": -5000,
+            "time": "9/5/2019, 11:45 AM",
+            "accountName": "Lönekonto"
+          },
+          {
+            "label": "Test",
+            "amount": -5000,
+            "time": "9/5/2019, 11:45 AM",
+            "accountName": "Lönekonto"
+          },
+          {
+            "label": "Test",
+            "amount": -5000,
+            "time": "9/5/2019, 11:37 AM",
+            "accountName": "Lönekonto"
+          },
+          {
+            "label": "Test",
+            "amount": -5000,
+            "time": "9/5/2019, 11:36 AM",
+            "accountName": "Lönekonto"
+          },
+          {
+            "label": "Test",
+            "amount": -5000,
+            "time": "9/5/2019, 11:34 AM",
+            "accountName": "Lönekonto"
+          },
+          {
+            "label": "Test",
+            "amount": -5000,
+            "time": "9/5/2019, 11:25 AM",
+            "accountName": "Lönekonto"
+          },
+          {
+            "label": "Test",
+            "amount": -5000,
+            "time": "9/5/2019, 11:20 AM",
+            "accountName": "Lönekonto"
+          },
+          {
+            "label": "Test",
+            "amount": -5000,
+            "time": "9/5/2019, 11:11 AM",
+            "accountName": "Lönekonto"
+          },
+          {
+            "label": "Test",
+            "amount": -5000,
+            "time": "9/5/2019, 11:11 AM",
+            "accountName": "Lönekonto"
+          },
+          {
+            "label": "Test",
+            "amount": -5000,
+            "time": "9/5/2019, 11:09 AM",
+            "accountName": "Lönekonto"
+          },
+          {
+            "label": "Test",
+            "amount": -5000,
+            "time": "9/5/2019, 10:46 AM",
+            "accountName": "Lönekonto"
+          },
+          {
+            "label": "Test",
+            "amount": -5000,
+            "time": "9/5/2019, 10:41 AM",
+            "accountName": "Lönekonto"
+          },
+          {
+            "label": "Test",
+            "amount": -5000,
+            "time": "4/29/2019, 8:50 AM",
+            "accountName": "Lönekonto"
           },
           {
             "label": "Test",

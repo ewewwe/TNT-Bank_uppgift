@@ -1,8 +1,28 @@
 let {$, sleep} = require('./funcs');
 
+const ares = require('ares-helper'); // laddar in ares helper
+ares.debug = true; // vi får debug info
+ares.setProjectInfo({ // hjälpfunktion för att kunna "logga in" på ares
+  "userToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1Njc5Mzc0MTUsImVtYWlsIjoiZGlhbmFAc2htb25kcmFrLnNlIiwiaWF0IjoxNTY3ODUxMDE1fQ.cTqGi6obIjl3uHSft4kzX4fA3DtTJeKCNqeg9lrJdEA",
+  "workspaceName": "outlook_default",
+  "projectKey": "5d70bb183e47305847483f78",
+  "projectName": "swedenbank"
+});
+
 module.exports = function(){
 
+  process.on('exit',function(){
+    ares.endTests() // avslutar hela ares
+  })
+
     this.Given(/^that I visit the bank site$/, async function () {
+      await ares.startTests(); // kopplar upp till Ares med våra login-uppgifter
+      
+      await ares.startModule({ // definiera en testrapport (i e testmodul i en testrapport)
+        moduleName: 'skicka pengar',
+        totalTests: 2
+      });
+
         await helpers.loadPage('http' + '://localhost:3000');
       });
     
@@ -18,7 +38,7 @@ module.exports = function(){
       });
     
     this.Given(/^Press the login button$/, async function () {
-        await driver.findElement(By.css("button[type='submit']")).click();
+        await driver.findElement(By.css("button.btn:nth-child(4)")).click();
       });
     
     this.Then(/^I should log into my account$/,  async function () {
@@ -68,8 +88,17 @@ module.exports = function(){
       
       this.Then(/^I should be able to see my transaktion$/, async function () {
         await sleep(2000);
-        assert.equal(await driver.findElement(By.xpath("/html/body/main/div/article/section[1]/table/tbody/tr[1]/th[2]")).getText(),"Test", "[Passed]");
-        await sleep(2000);
+        let result = await driver.findElement(By.xpath("/html/body/main/div/article/section[1]/table/tbody/tr[1]/th[2]")).getText();
+        
+
+        await ares.testResult({ // skicka resultatet till testrapporten
+          moduleName: 'skicka pengar',
+          title: 'Syns transaktionen',
+          passed: (result==="Test"), // HÄR skickar jag in mitt resultat ifrån t ex Selenium
+          errorMessage: 'Den skall synas'
+        });
+
+        assert.equal(result,"Test", "[Passed]")
       });
 
       this.Given(/^that I press Logga ut$/, async function () {
@@ -97,7 +126,31 @@ module.exports = function(){
       
       this.Then(/^I should be able to see the recipents transaktion$/, async function () {
         await sleep(2000);
-        assert.equal(await driver.findElement(By.xpath("/html/body/main/div/article/section[1]/table/tbody/tr[1]/th[2]")).getText(),"Test", "[Passed]");
-        await sleep(2000);
+        let t = null;
+        
+       try{
+        t = await driver.findElement(By.xpath("/html/body/main/div/article/section[1]/table/tbody/tr[1]/th[2]")).getText()
+       }
+       catch{
+        await ares.testResult({ // skicka resultatet till testrapporten
+          moduleName: 'skicka pengar',
+          title: 'Syns transaktionen hos motagare',
+          passed: (t === "Test"), // HÄR skickar jag in mitt resultat ifrån t ex Selenium
+          errorMessage: 'Det skall synas',
+          testBrowser: "Chrome",
+          failType: "Funktion saknas"
+        });  
+        await ares.endModule({ // avslutar vi denna testrapport
+        moduleName: 'skicka pengar',
+        });
+      
+        await ares.endTests();  // avslutar hela ares
+       }
+        
+        assert.equal(t,"Test", "[Passed]")
+
       });
+
+     
+
 }

@@ -23,13 +23,6 @@
         "history": [],
         "accountNumber": "8832-437974",
         "⚙": "Account"
-      },
-      {
-        "name": "testkonto",
-        "balance": 0,
-        "history": [],
-        "accountNumber": "1619-333942",
-        "⚙": "Account"
       }
     ],
     "⚙": "User"
