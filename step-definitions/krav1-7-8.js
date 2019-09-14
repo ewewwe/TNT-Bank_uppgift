@@ -12,7 +12,7 @@ const ares = require('ares-helper'); // laddar in ares helper
 
 module.exports = function(){
 
-  this.Given(/^that I visit the bank site$/, async function () {
+  this.Given(/^that I visit the bank site to test krav-1-7-8$/, async function () {
 
     await ares.startTests(); // kopplar upp till Ares med våra login-uppgifter
       
@@ -24,16 +24,14 @@ module.exports = function(){
     await helpers.loadPage('http' + '://localhost:3000');
     });
 
-  this.Given(/^I Press on login and enter my login information$/, async function () {
+  this.Given(/^I Press on login and enter my login information for Bengt$/, async function () {
     await driver.findElement(By.css("button[type='button']")).click();
     await driver.findElement(By.css("input[type='text']")).sendKeys("Bengt");
     await driver.findElement(By.css("input[type='password']")).sendKeys("Lösen0rd");
     await driver.findElement(By.css("button[type='submit']")).click(); 
   });
 
-  this.Given(/^Go to my accounts$/,  async function () {
-   await driver.findElement(By.xpath("//a[@href='#my-accounts']")).click();
-   });
+
 
   this.Then(/^I Should be able to add a bank account, rename it and delete it again and logout.$/, {timeout: 100 * 1000}, async function () {
     await driver.findElement(By.css("*[data-target='#addAccountModal']")).click();
@@ -67,9 +65,6 @@ module.exports = function(){
   
     //assert.equal(t, true, "[Passed]")
     
-    await sleep(2000);
     await driver.findElement(By.xpath("/html/body/main/div/aside/nav/ul/li[7]/button/a")).click();
-    await sleep(2000);
     });
-
   }

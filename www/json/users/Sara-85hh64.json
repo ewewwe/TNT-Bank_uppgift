@@ -5,12 +5,48 @@
     "accounts": [
       {
         "name": "Lönekonto",
-        "balance": 5720,
+        "balance": 5120,
         "history": [
           {
             "label": "Test 100",
             "amount": -100,
-            "time": "2019-09-11 19:57"
+            "time": "2019-09-14 12:12"
+          },
+          {
+            "label": "Test 100",
+            "amount": -100,
+            "time": "2019-09-14 12:10",
+            "accountName": "Lönekonto"
+          },
+          {
+            "label": "Test 100",
+            "amount": -100,
+            "time": "2019-09-14 11:59",
+            "accountName": "Lönekonto"
+          },
+          {
+            "label": "Test 100",
+            "amount": -100,
+            "time": "2019-09-14 11:52",
+            "accountName": "Lönekonto"
+          },
+          {
+            "label": "Test 100",
+            "amount": -100,
+            "time": "2019-09-14 11:50",
+            "accountName": "Lönekonto"
+          },
+          {
+            "label": "Test 100",
+            "amount": -100,
+            "time": "2019-09-14 11:45",
+            "accountName": "Lönekonto"
+          },
+          {
+            "label": "Test 100",
+            "amount": -100,
+            "time": "2019-09-11 19:57",
+            "accountName": "Lönekonto"
           },
           {
             "label": "Test 100",

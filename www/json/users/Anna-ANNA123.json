@@ -5,12 +5,66 @@
     "accounts": [
       {
         "name": "Lönekonto",
-        "balance": 9999500,
+        "balance": 9998600,
         "history": [
           {
             "label": "",
             "amount": -100,
-            "time": "2019-09-10 23:30"
+            "time": "2019-09-14 12:12"
+          },
+          {
+            "label": "",
+            "amount": -100,
+            "time": "2019-09-14 12:10",
+            "accountName": "Lönekonto"
+          },
+          {
+            "label": "",
+            "amount": -100,
+            "time": "2019-09-14 12:07",
+            "accountName": "Lönekonto"
+          },
+          {
+            "label": "",
+            "amount": -100,
+            "time": "2019-09-14 12:03",
+            "accountName": "Lönekonto"
+          },
+          {
+            "label": "",
+            "amount": -100,
+            "time": "2019-09-14 11:58",
+            "accountName": "Lönekonto"
+          },
+          {
+            "label": "",
+            "amount": -100,
+            "time": "2019-09-14 11:51",
+            "accountName": "Lönekonto"
+          },
+          {
+            "label": "",
+            "amount": -100,
+            "time": "2019-09-14 11:49",
+            "accountName": "Lönekonto"
+          },
+          {
+            "label": "",
+            "amount": -100,
+            "time": "2019-09-14 11:44",
+            "accountName": "Lönekonto"
+          },
+          {
+            "label": "",
+            "amount": -100,
+            "time": "2019-09-14 11:39",
+            "accountName": "Lönekonto"
+          },
+          {
+            "label": "",
+            "amount": -100,
+            "time": "2019-09-10 23:30",
+            "accountName": "Lönekonto"
           },
           {
             "label": "",
@@ -72,12 +126,66 @@
       },
       {
         "name": "Bensinkonto",
-        "balance": 2000,
+        "balance": 2900,
         "history": [
           {
             "label": "",
             "amount": 100,
-            "time": "2019-09-10 23:30"
+            "time": "2019-09-14 12:12"
+          },
+          {
+            "label": "",
+            "amount": 100,
+            "time": "2019-09-14 12:10",
+            "accountName": "Bensinkonto"
+          },
+          {
+            "label": "",
+            "amount": 100,
+            "time": "2019-09-14 12:07",
+            "accountName": "Bensinkonto"
+          },
+          {
+            "label": "",
+            "amount": 100,
+            "time": "2019-09-14 12:03",
+            "accountName": "Bensinkonto"
+          },
+          {
+            "label": "",
+            "amount": 100,
+            "time": "2019-09-14 11:58",
+            "accountName": "Bensinkonto"
+          },
+          {
+            "label": "",
+            "amount": 100,
+            "time": "2019-09-14 11:51",
+            "accountName": "Bensinkonto"
+          },
+          {
+            "label": "",
+            "amount": 100,
+            "time": "2019-09-14 11:49",
+            "accountName": "Bensinkonto"
+          },
+          {
+            "label": "",
+            "amount": 100,
+            "time": "2019-09-14 11:44",
+            "accountName": "Bensinkonto"
+          },
+          {
+            "label": "",
+            "amount": 100,
+            "time": "2019-09-14 11:39",
+            "accountName": "Bensinkonto"
+          },
+          {
+            "label": "",
+            "amount": 100,
+            "time": "2019-09-10 23:30",
+            "accountName": "Bensinkonto"
           },
           {
             "label": "",

@@ -12,7 +12,7 @@ ares.setProjectInfo({ // hjälpfunktion för att kunna "logga in" på ares
 module.exports = function () {
 
 
-  this.Given(/^that I visit the bank site$/, async function () {
+  this.Given(/^that I visit the bank site to test krav-1-4-11$/, async function () {
 
     await ares.startTests(); // kopplar upp till Ares med våra login-uppgifter
 
@@ -24,9 +24,8 @@ module.exports = function () {
     await helpers.loadPage('http' + '://localhost:3000');
   });
 
-  this.Given(/^I press on login and enter my login information$/, async function () {
+  this.Given(/^I press on login and enter my login information for Anna$/, async function () {
     await driver.findElement(By.css("button[type='button']")).click();
-    await sleep(2000);
     await driver.findElement(By.css("input[type='text']")).sendKeys("Anna");
     await driver.findElement(By.css("input[type='password']")).sendKeys("ANNA123");
     await driver.findElement(By.css("button[type='submit']")).click();
@@ -52,9 +51,7 @@ module.exports = function () {
     await driver.findElement(By.xpath("/html/body/main/div/aside/nav/ul/li[6]/button/a")).click();
     await sleep(2000);
     await driver.findElement(By.xpath("//*[@id='sum']")).sendKeys("100");
-    await sleep(2000);
     await driver.findElement(By.xpath("//*[@id='toAccountNumber']/option[2]")).click();
-    await sleep(2000);
     let t = true;
 
     await ares.testResult({ // skicka resultatet till testrapporten
@@ -74,7 +71,6 @@ module.exports = function () {
     // assert.equal(t, true, "[Passed]")
 
     await driver.findElement(By.xpath("/html/body/main/div/article/form/div[4]/div/button")).click();
-    await sleep(2000);
   });
 
 }
