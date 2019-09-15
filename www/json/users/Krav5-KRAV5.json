@@ -1,0 +1,77 @@
+{
+    "data": {
+      "username": "Krav5",
+      "myFile": "users/Krav5-KRAV5",
+      "accounts": [
+        {
+          "name": "Mångatrans",
+          "balance": 1100,
+          "history": [
+            {
+              "label": "Transaktion 1",
+              "amount": 100,
+              "time": "2019-04-28 11:24",
+              "accountName": "Mångatrans"
+            },
+            {
+              "label": "Transaktion 2",
+              "amount": 100,
+              "time": "2019-04-29 12:14",
+              "accountName": "Mångatrans"
+            },
+            {
+              "label": "Transaktion 3",
+              "amount": 100,
+              "time": "2019-04-30 13:33",
+              "accountName": "Mångatrans"
+            },
+            {
+              "label": "Transaktion 4",
+              "amount": 100,
+              "time": "2019-05-01 14:54",
+              "accountName": "Mångatrans"
+            },
+            {
+              "label": "Transaktion 5",
+              "amount": 100,
+              "time": "2019-05-02 15:54",
+              "accountName": "Mångatrans"
+            },
+            {
+              "label": "Transaktion 6",
+              "amount": 100,
+              "time": "2019-05-03 16:44",
+              "accountName": "Mångatrans"
+            },
+            {
+              "label": "Transaktion 7",
+              "amount": 100,
+              "time": "2019-05-04 17:34",
+              "accountName": "Mångatrans"
+            },
+            {
+              "label": "Transaktion 8",
+              "amount": 100,
+              "time": "2019-05-05 18:28",
+              "accountName": "Mångatrans"
+            },
+            {
+              "label": "Transaktion 9",
+              "amount": 100,
+              "time": "2019-05-06 19:04",
+              "accountName": "Mångatrans"
+            },
+            {
+              "label": "Transaktion 10",
+              "amount": 100,
+              "time": "2019-05-07 20:11",
+              "accountName": "Mångatrans"
+            }
+          ],
+          "accountNumber": "7899-123456",
+          "⚙": "Account"
+        }
+      ],
+      "⚙": "User"
+    }
+  }
