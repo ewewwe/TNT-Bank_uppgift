@@ -63,13 +63,18 @@ module.exports = function(){
       let balance = false;
       let accountBalanceCheck = await $('body > main > div > article > section.accounts.row.px-6 > table > tbody > tr:nth-child(3) > td.text-right');
       let text = await accountBalanceCheck.getText();
-      if(text === 100);
-      balance = true;
+      
+      if(text == 100){
+        balance = true;
+      }else{
+        balance = false;
+      }
+  
       
       await ares.testResult({
         moduleName: 'transfer between accounts',
         title: 'transfer between accounts',
-        passed: (balance === true),
+        passed: balance,
         errorMessage: 'Pengarna finns inte på mottagarens konto',
         testBrowser: 'Chrome'
       });
@@ -83,6 +88,7 @@ module.exports = function(){
       let logoutButton1 = await $('body > main > div > aside > nav > ul > li:nth-child(7) > button > a');
       await logoutButton1.click();
       
+      assert(balance,"balance false")
     });
   }
   
